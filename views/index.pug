@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    title Learn Dance
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div.logo#logo 
+                img(src="./static/dancelogo.png", alt="area for logo")
+            li #[a(href='/') Home]
+            li #[a(href='/') Services]
+            li #[a(href='/') About us]
+            li #[a(href='/contact') Contact us]
+    section.sec#intro
+            div.int Welcome to Our Dance Academy
+            div.int Start learning now
+    section.sec#ourmiss
+            div#main 
+                | Our Mission
+            div.card 
+                div.cards#card1 
+                    div.cardimg#cardimg1 
+                        img(src="./static/dancelogo2.png", alt="card1 logo")
+                    | Dance 2 Live    
+                div.cards#card2 
+                    div.cardimg#cardimg2
+                        img(src="./static/dancelogo3.png", alt="card2 logo")
+                    | Dance 4 Life
+                div.cards#card3      
+                    div.cardimg#cardimg3 
+                        img(src="./static/dancelogo4.png", alt="card3 logo")
+                    | Dance 4 Survival     
+    section.sec#Sponsors
+        div#main 
+            | Our Sponsors
+        div.spon
+            div#spon1.inspon
+                img(src="./static/spon1.png", alt="1st Sponsor")
+            div#spon2.inspon
+                img(src="./static/spon2.png", alt="2nd Sponsor")
+            div#spon3.inspon 
+                img(src="./static/spon3.png", alt="3rd Sponsor")
+            div#spon4.inspon
+                img(src="./static/spon4.png", alt="4th Sponsor")
+    div.footer
+        |Copyright © 2020 NickDanceClass. All Rights Reserved
+
+    
+    script
+      include ../static/index.js

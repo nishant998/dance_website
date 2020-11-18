@@ -1,0 +1,44 @@
+#container {
+    min-height: 88vh;
+    background: url('../static/contactback.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-position: cover;
+}
+h3{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0rem 0rem;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.formclass{
+    margin: 0.7rem 0rem;
+    width: 30rem;
+    border-radius: 15px;
+    padding: 0.3rem;
+    border: 3px solid rgb(255, 255, 255);  
+}
+.formclass::placeholder{
+    color: rgb(116, 69, 226);
+    font-weight: bold;
+}
+
+.btn{
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+    background-color: rgb(116, 69, 226);
+    color: white;
+    border:3px ridge rgb(116, 69, 226);
+    border-radius: 15px;
+    margin-top: 2rem;
+}

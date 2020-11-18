@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#logo img{
+    height: 4rem;
+    width: 3rem;
+    filter: invert(1);
+}
+#navbar{
+    position: sticky;
+    top: 0 ;
+    z-index: 2;
+    overflow: visible;
+}
+
+
+#navbar ul{
+    display: flex ;
+    align-items: center;
+    background: #6441A5;  
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  
+    background: linear-gradient(to right, #2a0845, #6441A5); 
+    /* justify-content: center; */
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 1rem 1rem;
+    padding: 0rem 1rem;
+
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color : white ;
+    font-family: 'Libre Baskerville', serif;
+}
+#navbar ul li a:hover{
+    font-weight: bold;
+    text-shadow:2px 2px 2px gray;
+    color : yellow ;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    font-family: 'Caveat', cursive;
+    height: 40rem;
+    position:relative;
+    background: url('../static/dance2.jpg') no-repeat;
+    background-position: center;
+    background-size: 100% 40rem;
+    
+}
+
+.int {
+    background: linear-gradient(to right, #f5a207 0%, #0fd863 100%);
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 5rem;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 1rem ;
+    animation-name: introani;
+    animation-duration: 4s;
+    animation-iteration-count :infinite ;
+    animation-direction: alternate-reverse;
+    animation-timing-function:linear;
+    }
+@keyframes introani{
+    to{margin-left:40rem;}
+}
+#ourmiss{
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+    background:url('../static/mission1.jpg') no-repeat ;
+    background-size: 100% 20rem;
+    overflow: hidden;
+}
+#main{
+    margin: 0.8rem auto;
+   font-weight: bold;
+   font-size: 1.5rem;
+   text-align: center;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(202, 187, 187);
+    border-radius: 14px;
+    font-family:cursive ;
+    font-weight: bold;
+    color: rgb(252, 15, 35);
+}
+.cards:hover{
+    animation-name: cardsani ;
+    animation-duration: 0.7s;
+    cursor: pointer;
+}
+@keyframes cardsani{
+    from{box-shadow: 0px 0px 0px black;}
+    to{box-shadow : 5px 5px 10px black;}
+}
+.cardimg img{
+    position: 30px 40px;
+    height: 7rem;
+    width: 6rem;
+}
+#Sponsors{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 15rem;
+    color : white ;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(0,0,0,1) 62%, rgba(252,176,69,1) 100%);
+    } 
+
+.spon img{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+.spon{
+    display:flex;  
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.inspon{
+    margin: 2rem  0rem;
+}
+.footer {
+        background-color: black;
+        color:cyan;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
